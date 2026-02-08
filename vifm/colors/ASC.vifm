@@ -1,0 +1,40 @@
+
+" terminal_like.vifm
+" Based on your Kitty/Ghostty palette
+
+highlight clear
+"background=dark
+
+" === Base ===
+highlight Normal       guifg=#ffffff guibg=#1e1e1e
+highlight Cursor       guifg=#1e1e1e guibg=#ffffff
+highlight LineNr       guifg=#464646 guibg=#1e1e1e
+highlight StatusLine   guifg=#ffffff guibg=#1a1a1a
+highlight WildMenu     guifg=#1e1e1e guibg=#0a84ff
+
+" === File types ===
+highlight Directory    guifg=#26a439
+highlight Executable   guifg=#32d74b
+highlight Link         guifg=#9647bf
+highlight BrokenLink   guifg=#cc372e
+highlight Device       guifg=#ffd60a
+highlight Socket       guifg=#76d6ff
+
+" === Selection ===
+highlight Selected     guifg=#ffffff guibg=#0869cb
+highlight Current      guifg=#ffffff guibg=#0a84ff
+
+" === Messages ===
+highlight ErrorMsg     guifg=#ff453a guibg=#1e1e1e
+highlight WarningMsg   guifg=#ffd60a guibg=#1e1e1e
+highlight InfoMsg      guifg=#479ec2 guibg=#1e1e1e
+
+" === UI elements ===
+highlight Border       guifg=#464646
+highlight TabLine      guifg=#98989d guibg=#1a1a1a
+highlight TabLineSel   guifg=#ffffff guibg=#0869cb
+
+" === Search ===
+highlight Search       guifg=#1e1e1e guibg=#cdac08
+highlight IncSearch    guifg=#1e1e1e guibg=#ffd60a
+

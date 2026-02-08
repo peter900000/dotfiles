@@ -1,0 +1,122 @@
+# vim:ft=i3config:
+
+# Virker bedst her da i3 læser include direktiver først
+exec_always --no-startup-id killall polybar
+exec_always --no-startup-id feh --bg-scale --zoom fill ~/Pictures/the-past-thomas-cole.png
+
+# Mod knap
+set $mod Mod4
+
+# Restart/reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+c reload
+
+# Scratchpad > tilføj senere
+bindsym $mod+i scratchpad show
+
+
+include ~/.config/i3/borders
+include ~/.config/i3/mouse
+include ~/.config/i3/apps 
+include ~/.config/i3/execs
+include ~/.config/i3/workspaces
+include ~/.config/i3/audio
+
+# XDG autostart
+exec --no-startup-id dex --autostart --environment i3
+
+# xss, for en sikkerheds skyld
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# Screensaver
+exec_always --no-startup-id xset s off # disable screensaver
+exec_always --no-startup-id xset -dpms          # disable power saving
+exec_always --no-startup-id xset s noblank      # don't blank the screen
+
+# Network Manager
+exec --no-startup-id nm-applet
+
+# Floating modifier, træk vinduer
+floating_modifier $mod
+
+# Terminal
+bindsym $mod+Return exec alacritty
+
+# Kill vindue
+bindsym $mod+Shift+q kill
+
+# rofi
+bindcode $mod+40 exec "rofi -show drun"
+bindcode $mod+Shift+40 exec "rofi -show combi"
+# "rofi -modi drun, run-show drun"
+
+# Fokus
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+
+# Flyt vinduer
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right 
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Down move down
+
+# Vandret/lodret ordning af vinduer
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+# "container layout"
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Tiling til/fra
+bindsym $mod+Shift+space floating toggle
+
+# Skift fokus mellem tile/floating
+bindsym $mod+space focus mode_toggle
+
+# Fokuser 'parent container'
+bindsym $mod+a focus parent
+
+# Workspaces (fra hvis det ikke virker)
+
+# Exit
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Skrider du?' -B 'Vi ses'"
+
+
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym ae resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+
+
+
+

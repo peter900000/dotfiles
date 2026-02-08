@@ -1,0 +1,72 @@
+# Zathura configuration file
+# ASC
+# colors
+
+
+
+set notification-error-bg       "#ff453a" # Red
+set notification-error-fg       "#ffffff" # Foreground
+set notification-warning-bg     "#ffd60a" # giallo
+set notification-warning-fg     "#ffffff" # Selection
+set notification-bg             "#282a36" # Background
+set notification-fg             "#f8f8f2" # Foreground
+
+set completion-bg               "#282a36" # Background
+set completion-fg               "#6272a4" # Comment
+set completion-group-bg         "#282a36" # Background
+set completion-group-fg         "#6272a4" # Comment
+set completion-highlight-bg     "#44475a" # Selection
+set completion-highlight-fg     "#f8f8f2" # Foreground
+
+set inputbar-bg                 "#1e1e1e" # Background
+set inputbar-fg                 "#ffffff" # Foreground
+set statusbar-bg                "#ffffff" # Background
+set statusbar-fg                "#1e1e1e" # Foreground
+set notification-error-bg       "#1e1e1e" # Red
+set notification-error-fg       "#ff453a"   # Foreground
+set notification-warning-bg     "#cc372e"   # Orange
+set notification-warning-fg     "#1e1e1e"      # Selection
+set notification-bg             "#1e1e1e"      # Background
+set notification-fg             "#ffffff"   # Foreground
+
+set completion-bg               "#464646"      # Background
+set completion-fg               "#76d6ff"    # Comment
+set completion-group-bg         "#1e1e1e"      # Background
+set completion-group-fg         "#ffd60a"    # Comment
+set completion-highlight-bg     "#76d6ff"      # Selection
+set completion-highlight-fg     "#464646"   # Foreground
+
+set index-bg                    "#1e1e1e"  # 
+set index-fg                    "#ffffff"  # 
+set index-active-bg             "#98989d"  # 
+set index-active-fg             "#1e1e1e"  # 
+
+set inputbar-bg                 "#1e1e1e"  # 
+set inputbar-fg                 "#ffffff"  # 
+set statusbar-bg                "#ffffff"  # 
+set statusbar-fg                "#1e1e1e"  # 
+
+set highlight-color             "#464646" # 
+set highlight-active-color      "#479ec2" # 
+
+set default-bg                  "#1e1e1e" # Background
+set default-fg                  "#ffffff" # Foreground
+#set default-bg                  rgba(40,42,54,1)      # Background
+#set default-fg                  rgba(248,248,242,1)   # Foreground
+
+set render-loading              true
+set render-loading-fg           "#282a36" # Background
+set render-loading-bg           "#f8f8f2" # Foreground
+#set render-loading-fg           rgba(40,42,54,1)      # Background
+#set render-loading-bg           rgba(248,248,242,1)   # Foreground
+
+#
+# Recolor mode settings
+#
+
+set recolor-lightcolor          "#1e1e1e" # Background
+#set recoler-lightcolor		 "#479ec2"
+
+# let gullig hvid, rar at læse
+set recolor-darkcolor           "#f8f8f2" # Foreground/tekst
+

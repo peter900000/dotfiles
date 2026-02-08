@@ -1,0 +1,24 @@
+palette = 0=#1a1a1a # sort
+palette = 1=#cc372e # gul, lys
+palette = 2=#26a439 # grøn
+palette = 3=#cdac08 # gul, mørk
+palette = 4=#0869cb # blå
+palette = 5=#9647bf # lilla
+palette = 6=#479ec2 # himmelblå 
+palette = 7=#98989d # lysegrå
+palette = 8=#464646 # mørkegrå
+palette = 9=#ff453a # rød
+palette = 10=#32d74b # limegrøn
+palette = 11=#ffd60a # giallo orion
+palette = 12=#0a84ff # royalish blue
+palette = 13=#bf5af2 # violet
+palette = 14=#76d6ff # himmelblå 2, kitty tekst
+palette = 15=#ffffff # hvid
+background = #1e1e1e
+foreground = #ffffff
+cursor-color = #98989d
+cursor-text = #ffffff
+selection-background = #3f638b
+selection-foreground = #ffffff
+
+Bemærkning til alacritty: disse farver kan overføres 1:1

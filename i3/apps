@@ -1,0 +1,8 @@
+# vim:ft=i3config:
+# For et overblik over tilgængelige taster: https://i3wm.org/docs/refcard.html
+bindsym $mod+b exec --no-startup-id firefox
+bindsym $mod+Shift+b exec --no-startup-id "flatpak run app.zen_browser.zen"
+bindsym $mod+p exec --no-startup-id firefox -private-window
+bindsym $mod+o exec --no-startup-id kitty -e vifm
+bindsym $mod+l exec --no-startup-id kitty -e cmus
+

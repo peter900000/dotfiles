@@ -1,0 +1,17 @@
+# theme
+import = ["~/.config/alacritty/theme/apple_system_colors.toml"]
+
+[font]
+size = 11.0
+normal = { family = "JetBrainsMono Nerd Font", style = "SemiBold" } 
+# Bemærk; forskellige tykkelser af JBM NF
+
+#[font.normal]
+#family = "JetBrainsMono Nerd Font"
+# "Mono" ser umiddelbart ok ud
+# family = "Mono"
+
+[window]
+padding = { x = 3, y = 3}
+title = "Terminal"
+

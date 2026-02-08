@@ -1,0 +1,31 @@
+# vim:ft=i3config:
+
+#title_window_icon yes
+# Mulighed for smal title bar: font: 0
+font pango:Inter Bold 7 
+#default_border pixel 1 
+#border pixel 1
+
+title_align left 
+
+# Vindueskarm
+for_window [class="^.*"] border pixel 3
+# for_window [class="^.*"] border normal
+
+# Padding - 4 mellemrum liner op med polybar padding
+for_window [class="^·*"] title_format "    %title"
+
+# eller titel kun for terminaler
+for_window [class="kitty"] border normal
+
+# Fjern titel fra firefox
+#for_window [class="firefox"] border pixel 3
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #479ec2 #479ec2 #ffffff #ff453a   #479ec2
+client.focused_inactive #464646 #464646 #ffffff #464646	  #5f676a
+client.unfocused        #464646 #464646 #ffffff #292d2e   #464646
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #000000 #ffffff #000000   #0c0c0c
+
+# mange af farverne kommer først i spil når man bruger tabbing.

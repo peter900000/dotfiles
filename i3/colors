@@ -1,0 +1,10 @@
+# vim:ft=i3config:
+# class                 border  backgr. text    indicator child_border
+client.focused          #ffffff #000000 #ffffff #ff453a   #479ec2
+client.focused_inactive #464646 #000000 #ffffff #464646	  #5f676a
+client.unfocused        #464646 #000000 #ffffff #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #000000 #ffffff #000000   #0c0c0c
+
+# mange af farverne kommer først i spil når man bruger tabbing.
+# det kan være du skal lave en titelbar alligevel; med blå baggrund, kant og hvid Inter tekst

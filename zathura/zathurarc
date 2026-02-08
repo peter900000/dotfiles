@@ -1,0 +1,39 @@
+# Zathura configuration file
+# se også "man zathurarc"
+
+# Include
+# Skal være absolut path
+include themes/asc
+#include /home/apollon/.config/zathura/themes/asc
+#include /home/apollon/.config/zathura/themes/dracula
+
+
+#
+# Font
+#
+
+# kan man gøre det federe?
+set font "Inter Bold 10"
+
+#
+# Maps
+#
+
+map <C-r> set recolor
+map <C-R> set recolor-reverse-video
+#
+# Startup options
+#
+set adjust-open width
+set recolor true
+set guioptions "cshv"
+
+# ligner lort da padding for øvrige elementer ikke kan konfig.
+#set statusbar-h-padding 3
+
+#set recolor-keephue true
+set statusbar-home-tilde true
+set window-title-basename true
+set show-signature-information true
+#set statusbar-basename true
+

@@ -1,0 +1,11 @@
+# vim:ft=i3config:
+# Disse instillinger kan findes under xset; prøv følgende:
+# Accel Profiles iflg. https://wiki.archlinux.org/title/Mouse_acceleration
+# Du kan formentligt også bare skifte default profile.
+exec --no-startup-id xinput set-prop 8 "libinput Accel Profile Enabled" 0, 1, 0
+exec --no-startup-id xinput set-prop 8 "libinput Accel Speed" 0.0
+exec --no-startup-id xinput set-prop 8 "libinput Accel Enabled Default" 0, 1, 0 
+
+exec_always --no-startup-id xinput set-prop 13 "libinput Accel Profile Enabled" 0, 1, 0
+exec_always --no-startup-id xinput set-prop 13 "libinput Accel Speed" 0.0
+exec_always --no-startup-id xinput set-prop 13 "libinput Accel Enabled Default" 0, 1, 0 
